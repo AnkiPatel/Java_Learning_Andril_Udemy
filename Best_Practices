@@ -1,0 +1,4 @@
+Best practices rule:
+----------------
+
+-> Always validate the input parameter of method.
