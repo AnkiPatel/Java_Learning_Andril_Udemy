@@ -3,7 +3,7 @@
  Encapsulation is a principle that teaches us to group data and behavior 
  (those our fields and methods) together as a single unit.
 
-We have 4 main access modifiers. They are public, protected package private or default private.
+We have 4 main access modifiers. They are public, protected, package private or default private.
  */
 
 /*
@@ -60,11 +60,11 @@ public class LearnEncapsulation {
 		ClassB b = new ClassB();
 		
 		//"doSomethingClassB" having default access modifier. Hence you cannot access it
-		// in this "learn" package. Following statment gives error as: The method doSomethingClassB() from the type ClassB is not visible
+		// in this "learn" package. Following statement gives error as: The method doSomethingClassB() from the type ClassB is not visible
 		//b.doSomethingClassB();
 		
 		ClassY y = new ClassY();
-		// Note that ClassY can access "doSomethingClassB" method becuase ClassY having same package
+		// Note that ClassY can access "doSomethingClassB" method because ClassY having same package
 		// as ClassB.
 		y.ClassYTakeAction();
 		
@@ -92,7 +92,7 @@ public class LearnEncapsulation {
 		//AA.methodWithDefaultAM();
 		
 		ChildOfClassA coca = new ChildOfClassA();
-		//While overriding, we have epand the visibility of the function methodWithDefaultAM from "default"
+		//While overriding, we have expanded the visibility of the function methodWithDefaultAM from "default"
 		//to "public", hence we are able to access here.
 		coca.methodWithDefaultAM();
 		
