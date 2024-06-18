@@ -17,7 +17,7 @@ public class ArrayLearning {
 		
 		arryOne = new int[10]; // initialization with default value of int which is 0
 		int arryOne_lenght = arryOne.length; // way to find the length of array.
-		System.out.println(arryOne_lenght);
+		System.out.println(arryOne_lenght); // 10
 		
 		//in c++ you find the lenght in following way
 		/*
@@ -26,14 +26,14 @@ public class ArrayLearning {
 	    */
 		
 		double[] doubleArrayOne = new double[5]; // declaration and initialization with default double value which is 0.0
-		System.out.println(doubleArrayOne[0]);
+		System.out.println(doubleArrayOne[0]); //0.0
 		
 		//Below instruction gives "index out of bound exception when trying to access invalid element
 		//java.lang.ArrayIndexOutOfBoundsException: Index 7 out of bounds for length 5
 		//System.out.println(doubleArrayOne[7]); 
 		
 		boolean[] boolArrayOne = new boolean[3]; //// declaration and initialization with default boolean value which is 'false'
-		System.out.println(boolArrayOne[2]); 
+		System.out.println(boolArrayOne[2]); //false
 		
 		//Array literals
 		int[] arrayThree = {3,2,1};
@@ -43,7 +43,7 @@ public class ArrayLearning {
 			Didn’t specify the type of the array.
 			Didn’t explicitly specify the length of the array object.
 		*/
-		System.out.println(arrayThree[1]);
+		System.out.println(arrayThree[1]); //2
 		
 		//Multi dimensional arrays
 		int[][] mdArrayOne = {
@@ -65,10 +65,17 @@ public class ArrayLearning {
 		//1 Print Array
 		//2 Sort Array
 		int[] arryFour = {45,23,78};
-		System.out.println(Arrays.toString(arryFour));
+		System.out.println(Arrays.toString(arryFour));//[45, 23, 78]
 		
 		Arrays.sort(arryFour);
-		System.out.println("After sort" + Arrays.toString(arryFour));
+		System.out.println("After sort" + Arrays.toString(arryFour));//After sort[23, 45, 78]
 	}
 
 }
+
+
+/*
+OP:
+------
+
+*/

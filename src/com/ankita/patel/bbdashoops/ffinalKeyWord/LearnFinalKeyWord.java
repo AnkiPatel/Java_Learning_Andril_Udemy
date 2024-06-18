@@ -17,7 +17,7 @@ package com.ankita.patel.bbdashoops.ffinalKeyWord;
 
 // Note 4 : Final method (reference : SampleClass.java)
 // Final key word can be used with a method in a case. When Method is final, It is can't be overridden.
-// Hence, you can't use final and observe keywords together because they can't exist simultaneously.
+// Hence, you can't use final and abstract keywords together because they can't exist simultaneously.
 
 
 public class LearnFinalKeyWord {

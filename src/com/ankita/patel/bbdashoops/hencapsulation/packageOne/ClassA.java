@@ -10,6 +10,7 @@ public class ClassA {
 		System.out.println("ClassA: Do something");
 	}
 	
+	//default access modifiers are accessible only within the same package.
 	void methodWithDefaultAM() {
 		System.out.println("ClassA: methodWithDefaultAM");
 	}

@@ -23,7 +23,8 @@ public class MethodLearning {
 	}
 	
 	/*
-	Method overloading is a concept that allows to declare multiple methods with same name but different parameters in the same class.
+	Method overloading is a concept that allows to declare multiple methods with same name but 
+	different parameters in the same class.
 
 	Java supports method overloading and always occur in the same class(unlike method overriding).
 	

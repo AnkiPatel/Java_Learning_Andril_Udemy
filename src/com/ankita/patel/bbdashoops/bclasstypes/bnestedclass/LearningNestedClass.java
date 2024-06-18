@@ -26,3 +26,14 @@ public class LearningNestedClass {
 		
 	}
 }
+
+/*
+
+OP:
+-----
+car1: 
+SomeCar [tyreList=[typeId : 233, currentAirPressure : 35.0, typeId : 233, currentAirPressure : 35.0, typeId : 233, currentAirPressure : 35.0, typeId : 233, currentAirPressure : 35.0], color=red : 125, blue : 125, yellow : 125, colorname : gray]
+tyre: 
+typeId : 121, currentAirPressure : 0.0
+colSch: red : 125, blue : 125, yellow : 125, colorname : gray
+*/

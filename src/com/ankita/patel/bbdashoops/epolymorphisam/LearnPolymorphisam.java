@@ -34,3 +34,14 @@ public class LearnPolymorphisam {
 	}
 
 }
+
+/*
+OP:
+------
+officeCar current speed: 45.0
+Fetching Engine history of Electric car
+Populating engine history
+familyCar current speed: 67.0
+Fetching break history of PetrolCar
+Break service record populated
+*/
