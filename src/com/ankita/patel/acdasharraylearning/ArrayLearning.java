@@ -9,7 +9,7 @@ public class ArrayLearning {
 		
 		//Way of declaration 
 		int arryOne[]; // C++ style way
-		int[] arraytwo[]; // preferable way
+		char arraytwo[]; // preferable way
 		//In c++, you normally create array on stack.. hence with declaration you 
 		// gives size of array. 
 		// int test_scores [5] {23,56,24,56,89};
@@ -18,6 +18,10 @@ public class ArrayLearning {
 		arryOne = new int[10]; // initialization with default value of int which is 0
 		int arryOne_lenght = arryOne.length; // way to find the length of array.
 		System.out.println(arryOne_lenght); // 10
+
+		arraytwo = new char[6]; // initialization with \u0000
+		System.out.println("arraytwo[2]: " + arraytwo[2]); // print empty on console
+
 		
 		//in c++ you find the lenght in following way
 		/*
@@ -51,7 +55,7 @@ public class ArrayLearning {
 				{77,2,9}
 		};
 		//array[i][j] : i for row and j for column
-		System.out.println("1st row: " + mdArrayOne[0]);
+		System.out.println("1st row: " + Arrays.toString(mdArrayOne[0]));//1st row: [3, 6, 2]
 		System.out.println("3rd element of last row: " + mdArrayOne[mdArrayOne.length-1][2]);
 		
 		/*Array in java are reference type and not the primitive type. Default value would be null.
@@ -77,5 +81,14 @@ public class ArrayLearning {
 /*
 OP:
 ------
-
+10
+arraytwo[2]:
+0.0
+false
+2
+1st row: [3, 6, 2]
+3rd element of last row: 9
+mdArrayTwo[0]: null
+[45, 23, 78]
+After sort[23, 45, 78]
 */
