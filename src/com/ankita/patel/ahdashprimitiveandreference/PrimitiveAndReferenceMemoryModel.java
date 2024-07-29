@@ -40,7 +40,7 @@ public class PrimitiveAndReferenceMemoryModel {
 	Integer int8 = new Integer(10);
 	System.out.println("int7 == int8 : " + (int7 == int8)); //false. 
 	// Now in spite of 10 is eligible value to be part of Integer pool, here we are telling compiler to 
-	// create totally different object on heap with value 10. So bother references int7 and int8 are pointing
+	// create totally different object on heap with value 10. So both references int7 and int8 are pointing
 	// to different memory. Hence comparison shows false. 
 	
 	//Correct way to call constructor which respect the Integer pool is "valueOf"
