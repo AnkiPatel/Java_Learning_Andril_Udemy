@@ -37,7 +37,7 @@ public class PassByValueLearning {
 		workOnObject(newObj);
 		System.out.println("After passing to function: " + newObj);
 
-		//
+		//For Wrapper class, it will be pass by value
 		Integer myInt = 89;
 		System.out.println("myInt before passing to funciton: " + myInt);
 		workOnIntObj(myInt);
@@ -87,4 +87,9 @@ Value in main function: point 3: 44
 Array value : point 1: [1, 2, 3]
 Array value : point 2: [1, 1111, 3]
 Array value : point 3: [1, 1111, 3]
+Before passing to function: MyCheckClass : counter = 10, name = phew
+Inside function : MyCheckClass : counter = 45, name = rhea
+After passing to function: MyCheckClass : counter = 45, name = rhea
+myInt before passing to funciton: 89
+myInt after passing to funciton: 89
 */
