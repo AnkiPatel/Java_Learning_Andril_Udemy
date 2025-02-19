@@ -4,29 +4,29 @@ public class PrimitiveTypes {
 
 	public static void main(String[] args) {
 		byte b = 5;
-		System.out.println("b: " + b);
+		System.out.println("b: " + b); //b: 5
 		
 		short s;
 		s = 3;
-		System.out.println("s: " + s);
+		System.out.println("s: " + s); //s: 3
 		
 		int i = 56;
-		System.out.println("i: " + i);
+		System.out.println("i: " + i); //i: 56
 		
 		long l1 = 4L; 
 		long l2 = 2_000_000_000l;
-		System.out.println("l1: " + l1 + "," + "l2: " + l2);
+		System.out.println("l1: " + l1 + "," + "l2: " + l2); //l1: 4,l2: 2000000000
 		
 		char c = 'r';
-		System.out.println("c: " + c );
+		System.out.println("c: " + c ); // c: r
 		
 		boolean flag = false;
-		System.out.println("flag: " + flag);
+		System.out.println("flag: " + flag); // flag: false
 		
 		float f1 = 1.4F;
 		float f2 = 3.8f;
 
-		System.out.println("f1: " + f1 + "," + "f2: " + f2);
+		System.out.println("f1: " + f1 + "," + "f2: " + f2); // f1: 1.4,f2: 3.8
 		
 		var v1 = "a";
 		//v1 = 5; // This will give compiler error.. to V1 you can assign only integer
@@ -65,7 +65,9 @@ public class PrimitiveTypes {
 		
 	}
 	
-	/*
+}
+
+/*
 OP:
 -----
 b: 5
@@ -84,5 +86,3 @@ bFour: -128
 Integer i4: 122
 i5: 122
 */
-
-}

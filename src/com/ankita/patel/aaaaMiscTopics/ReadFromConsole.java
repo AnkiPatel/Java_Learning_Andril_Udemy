@@ -6,7 +6,7 @@ public class ReadFromConsole {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Please enter your fev word: ");
+		System.out.println("Please enter a word: ");
 		String wrd = sc.next();
 		System.out.println("you typed: " + wrd);
 		System.out.println("Now enter your fev integer: ");
@@ -15,3 +15,14 @@ public class ReadFromConsole {
 	}
 
 }
+
+/*
+ OP: 
+ ----
+Please enter a word: 
+ankita
+you typed: ankita
+Now enter your fev integer:
+34
+Your fev int is: 34
+ */

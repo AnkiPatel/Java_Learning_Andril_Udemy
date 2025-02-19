@@ -7,25 +7,25 @@ public class StringMethodsLearning {
 	public static void main(String[] args) {
 		System.out.println("===String methods===\n");
 		String s = "  \tnayantara  ";
-		System.out.println("Original string: " + s);
+		System.out.println("Original string: " + s);//Original string:        nayantara
 		
 		//Length of the the string
 		int len = s.length();
-		System.out.println("s.length() : " + len);
+		System.out.println("s.length() : " + len);//s.length() : 14
 		
 		//check if it has given substring
 		boolean doStringHas = s.contains("ant");
-		System.out.println("s.contains(\"ant\") : " + doStringHas);
+		System.out.println("s.contains(\"ant\") : " + doStringHas);//s.contains("ant") : true
 		
 		//check if string is empty
 		boolean isEmptyString = s.isEmpty();
-		System.out.println("s.isEmpty() : " + isEmptyString);
+		System.out.println("s.isEmpty() : " + isEmptyString);//s.isEmpty() : false
 		
 		boolean isStartWith = s.startsWith(" ");
-		System.out.println("s.startsWith(\" \") : " + isStartWith);
+		System.out.println("s.startsWith(\" \") : " + isStartWith);//s.startsWith(" ") : true
 		
 		boolean isEndWith = s.endsWith("f");
-		System.out.println("s.endsWith(\"f\") : " + isEndWith);
+		System.out.println("s.endsWith(\"f\") : " + isEndWith);//s.endsWith("f") : false
 		
 		/* MIMP : String object are immutable not matter how many time you perform string operations. 
 		 * Hence String manipulation operations create new object of string and returns reference of it. 
@@ -37,52 +37,52 @@ public class StringMethodsLearning {
 		
 		//Convert to uppercase
 		result = s.toUpperCase();
-		System.out.println("s.toUpperCase() : " + result);
+		System.out.println("s.toUpperCase() : " + result); //s.toUpperCase() :       NAYANTARA
 		
 		//Convert to lowercase
 		result = s.toLowerCase();
-		System.out.println("s.toLowerCase() : " + result);
+		System.out.println("s.toLowerCase() : " + result); //s.toLowerCase() :       nayantara
 		
 		//Replace char/patters
 		result = s.replace("nayan","maha");
-		System.out.println("s.replace(\"nayan\",\"maha\") : " + result);
+		System.out.println("s.replace(\"nayan\",\"maha\") : " + result); //s.replace("nayan","maha") :     mahatara
 		
 		
 		//Remove leading or trailing spaces.
 		result = s.trim();
-		System.out.println("s.trim() : " + result);
+		System.out.println("s.trim() : " + result); //s.trim() : nayantara
 		
 		/*
 		 * "strip" method started from jdk 11. for older than jdk 11, use trip method. 
 		 * "strip" method used to remove any kind of whitespace (not only the space).
 		 */
 		result = s.strip();
-		System.out.println("s.strip() : " + result);
+		System.out.println("s.strip() : " + result);//s.strip() : nayantara
 		
 		/*
 		 * here "substring" method is same as c++ substring method. it takes starting index inclusively and
 		 * and to (end index) index exclusively
 		 */
 		result = s.substring(4,7);
-		System.out.println("s.substring(4,7) : " + result);
+		System.out.println("s.substring(4,7) : " + result);//s.substring(4,7) : aya
 		
 		
 		//convert string as array of bytes with "Arrays" utility class
 		byte []byteArray = s.getBytes();
-		System.out.println("s.getBytes() gave array at reference: " + byteArray + " : " + Arrays.toString(byteArray));
+		System.out.println("s.getBytes() gave array at reference: " + byteArray + " : " + Arrays.toString(byteArray));//s.getBytes() gave array at reference: [B@764c12b6 : [32, 32, 9, 110, 97, 121, 97, 110, 116, 97, 114, 97, 32, 32]
 		
 		//convert string into array of character with "Arrays" utility class
 		char []charArray = s.toCharArray();		
-		System.out.println("s.toCharArray() gave array at reference: " + charArray +  " : " + Arrays.toString(charArray));
+		System.out.println("s.toCharArray() gave array at reference: " + charArray +  " : " + Arrays.toString(charArray));//s.toCharArray() gave array at reference: [C@70dea4e : [ ,  ,    , n, a, y, a, n, t, a, r, a,  ,  ]
 		
 		
 		//access individual element
 		char c = s.charAt(6);
-		System.out.println("At 6th index, char is : " + c);
+		System.out.println("At 6th index, char is : " + c);//At 6th index, char is : a
 		
 		//split with help of specific character and get result as array of string.
 		String[] strArray = s.split("a");
-		System.out.println("string array as result : " + Arrays.toString(strArray));
+		System.out.println("string array as result : " + Arrays.toString(strArray));//string array as result : [      n, y, nt, r,   ]
 		
 		System.out.println("===String comparison===");
 		String s1 = "Hello";
@@ -96,18 +96,20 @@ public class StringMethodsLearning {
 		 * already exist in String pool.If yes, then java returns reference to the object that is 
 		 * already in heap memory instead of creating new one. 
 		 * On the other hand, when you are using ‘new’ keyword – you say Java to allocate memory and 
-		 * to create new object in heap. Taking into account we used string literal when initialized 's' 
+		 * to create new object in heap. 
+		 * 
+		 * Taking into account we used string literal when initialized 's' 
 		 * variable and s2 variable, these two variables are referring to the same object in pool of 
 		 * strings.
 		 */
 		boolean isSameStr = (s1 == s2); //true
-		System.out.println("(s1 == s2) : " + isSameStr);
+		System.out.println("(s1 == s2) : " + isSameStr);//(s1 == s2) : true
 		
 		isSameStr = (s1 == s3); //false
-		System.out.println("(s1 == s3) : " + isSameStr);
+		System.out.println("(s1 == s3) : " + isSameStr);//(s1 == s3) : false
 		
 		boolean isEqualStr = s1.equals(s3);
-		System.out.println("s1.equals(s3) : " + isEqualStr);
+		System.out.println("s1.equals(s3) : " + isEqualStr);//s1.equals(s3) : true
 		
 		//Understand about string's intern method. 
 		/*Intern method put s3 string in the String pool, and return the reference to the 
@@ -116,16 +118,16 @@ public class StringMethodsLearning {
 		 * will get true as a result here.
 		 * */
 		isEqualStr = (s1 == s3.intern());
-		System.out.println("(s1 == s3.intern()) : " + isEqualStr);
+		System.out.println("(s1 == s3.intern()) : " + isEqualStr); //(s1 == s3.intern()) : true
 		
 		String str1 = "Action";
 		String str2 = "action";
 		
 		isEqualStr = str1.equals(str2); // false
-		System.out.println("str1.equals(str2) : " + isEqualStr);
+		System.out.println("str1.equals(str2) : " + isEqualStr);//str1.equals(str2) : false
 		
 		isEqualStr = str1.equalsIgnoreCase(str2); // true
-		System.out.println("str1.equalsIgnoreCase(str2) : " + isEqualStr);
+		System.out.println("str1.equalsIgnoreCase(str2) : " + isEqualStr);//str1.equalsIgnoreCase(str2) : true
 
 	}
 
@@ -136,22 +138,22 @@ OP:
 -----
 ===String methods===
 
-Original string:   	nayantara  
+Original string:        nayantara  
 s.length() : 14
 s.contains("ant") : true
 s.isEmpty() : false
 s.startsWith(" ") : true
 s.endsWith("f") : false
-s.toUpperCase() :   	NAYANTARA  
-s.toLowerCase() :   	nayantara  
-s.replace("nayan","maha") :   	mahatara  
+s.toUpperCase() :       NAYANTARA  
+s.toLowerCase() :       nayantara  
+s.replace("nayan","maha") :     mahatara  
 s.trim() : nayantara
 s.strip() : nayantara
 s.substring(4,7) : aya
-s.getBytes() gave array at reference: [B@379619aa : [32, 32, 9, 110, 97, 121, 97, 110, 116, 97, 114, 97, 32, 32]
-s.toCharArray() gave array at reference: [C@cac736f : [ ,  , 	, n, a, y, a, n, t, a, r, a,  ,  ]
+s.getBytes() gave array at reference: [B@764c12b6 : [32, 32, 9, 110, 97, 121, 97, 110, 116, 97, 114, 97, 32, 32]
+s.toCharArray() gave array at reference: [C@70dea4e : [ ,  ,    , n, a, y, a, n, t, a, r, a,  ,  ]
 At 6th index, char is : a
-string array as result : [  	n, y, nt, r,   ]
+string array as result : [      n, y, nt, r,   ]
 ===String comparison===
 (s1 == s2) : true
 (s1 == s3) : false
